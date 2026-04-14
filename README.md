@@ -1,15 +1,15 @@
 # Hard-Matrisome-Digestion-Project
 Contains scripts (in /scripts) used to generate data, protein.tsv files, and psm.tsv files (in /data).
 # Condition and Sample Labels (n =3) 
-L: Long heat
-LF: High heat / Long heat
-S: Short heat
-SF: High heat / short heat
-C: Collagenase
-CF: High heat / Collagenase
-N: Benchmark
-RT: Cold water
-RTF: High heat / Cold water
+- L: Long heat
+- LF: High heat / Long heat
+- S: Short heat
+- SF: High heat / short heat
+- C: Collagenase
+- CF: High heat / Collagenase
+- N: Benchmark
+- RT: Cold water (n=1)
+- RTF: High heat / Cold water (n=1)
 # Scripts included 
 - Sequence coverage calculator for Matrisome, non-core Matrisome, core Matrisome, Proteoglycans, Glycoproteins, ECM-Associated, ECM-Affiliated, and Collagen proteins
 - Matrisome protein intensity enrichment calculator using Razor Intensity values in protein.tsv files
