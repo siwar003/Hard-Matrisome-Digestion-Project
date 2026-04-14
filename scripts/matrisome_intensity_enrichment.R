@@ -11,7 +11,7 @@ args <- commandArgs(trailingOnly = TRUE)
 input_dir <- if (length(args) >= 1) {
   args[[1]]
 } else {
-  "C:/Users/siwar/Desktop/Mass spec/filtered_onlyGallus"
+  file.path("data", "protein")
 }
 
 output_dir <- if (length(args) >= 2) {
