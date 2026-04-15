@@ -1,34 +1,3 @@
----
-title: "Hard Matrisome Digestion Manuscript Draft"
-author: "Siwar Hamdi"
-output:
-  html_document:
-    toc: true
-    toc_float: true
-    number_sections: true
-  github_document:
-    toc: true
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(
-  echo = FALSE,
-  warning = FALSE,
-  message = FALSE,
-  fig.width = 7,
-  fig.height = 5,
-  dpi = 300
-)
-```
-
-# Notes
-
-This `.Rmd` is a GitHub-friendly manuscript draft converted from the Word document. Text was converted to markdown structure, but image-based tables and figures still need to be replaced with either:
-
-1. markdown tables for simple summary tables, or
-2. code chunks that regenerate the figures directly from the source data.
-
-For manuscript development with your PI, the best practice is to keep all figure-generating scripts in a separate `/scripts` directory and all source data in `/data`, then render the manuscript from those files.
 
 # Introduction
 
