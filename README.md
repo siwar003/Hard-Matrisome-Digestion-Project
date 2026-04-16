@@ -18,4 +18,5 @@ Contains word document of manuscript and .md form of manuscript in addition to R
 - protein.tsv files for all replicates from all conditions
 - psm.tsv files for all replicates from all conditions
 - Reference files used for Matrisome gene mapping
+- figures directory contains all images used in manuscript
   
