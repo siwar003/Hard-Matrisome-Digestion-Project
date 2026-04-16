@@ -190,6 +190,13 @@ Looking at the sequence coverage with cold-water controls in addition to the ben
 ### Shared and unique Matrisome proteins
 
 Across all conditions, the majority of Matrisome proteins are shared, with only a few proteins (Elastin Microfibril Interface Located Protein 2, and Fibrinogen Gamma Chain and Fibrinogen Beta Chain) being exclusive to long heat and high heat/collagenase treatments only. The benchmark had the highest number of uniquely identified proteins. Closer examination of these proteins via STRING analysis reveals that these proteins are involved in ECM organization and post-translational modification of the ECM.
+<p align="center">
+  <img src="../figures/upset_plot_matrisome.png" width="700"/>
+</p>
+
+<p align="center">
+  <img src="../figures/upset_plot_matrisome_associated.png" width="700"/>
+</p>
 
 **Figure 6.** UpSet plots with unique and shared (A) core Matrisome and (B) Matrisome-associated proteins across conditions. Most Matrisome proteins are shared across conditions, with the most unique proteins being identified by the benchmark.
 
