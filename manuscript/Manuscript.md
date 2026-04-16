@@ -195,7 +195,7 @@ Across all conditions, the majority of Matrisome proteins are shared, with only 
 </p>
 
 <p align="center">
-  <img src="../figures/upset_plot_matrsisome_associated.png" width="700"/>
+  <img src="../figures/upset_plot_matrsiome_associated.png" width="700"/>
 </p>
 
 **Figure 6.** UpSet plots with unique and shared (A) core Matrisome and (B) Matrisome-associated proteins across conditions. Most Matrisome proteins are shared across conditions, with the most unique proteins being identified by the benchmark.
@@ -205,6 +205,10 @@ Across all conditions, the majority of Matrisome proteins are shared, with only 
 The consistency of the heat methods was also assessed to see if the heat treatments were reproducible across different tendon tissue samples. Heatmaps showing replicate consistency and data uniformity across conditions demonstrate that most heat-based treatments, including the benchmark, produced consistent replicates.
 
 However, collagenase-treated samples exhibited greater variability than all other conditions, likely reflecting the inherently stochastic nature of enzymatic cleavage on an insoluble, heterogeneous sample. Attempts to account for non-tryptic collagenase-generated peptides, specifically cleavages between glycine and leucine or isoleucine residues on the collagen triple helix, by reconfiguring the MS-Fragger FragPipe database search produced an intractably large search space and did not yield meaningful results. Additional sources of variability may include differences in pH, Ca2+ concentration, and uneven surface accessibility of tendon pieces across replicates. Together, these factors suggest that collagenase treatment introduces technical variability that is difficult to control, and that the water-based approach achieves more reproducible solubilization.
+
+<p align="center">
+  <img src="../figures/sample_correlation_heatmap.png" width="700"/>
+</p>
 
 **Figure 7.** Heat maps showing replicate similarity across the different conditions.
 
@@ -238,7 +242,15 @@ In the future, we aim to further explore how this method preserves or alters the
 
 ## Methods
 
+<p align="center">
+  <img src="../figures/schematic_of_heat_workflow.png" width="700"/>
+</p>
+
 **Figure 8.** Schematic of heat-extraction workflow.
+
+<p align="center">
+  <img src="../figures/schematic_of_benchmark_workflow.png" width="700"/>
+</p>
 
 **Figure 9.** Schematic of decellularization benchmark protocol workflow.
 
