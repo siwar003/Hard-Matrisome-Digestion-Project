@@ -195,7 +195,7 @@ Across all conditions, the majority of Matrisome proteins are shared, with only 
 </p>
 
 <p align="center">
-  <img src="../figures/upset_plot_matrisome_associated.png" width="700"/>
+  <img src="../figures/upset_plot_matrsisome_associated.png" width="700"/>
 </p>
 
 **Figure 6.** UpSet plots with unique and shared (A) core Matrisome and (B) Matrisome-associated proteins across conditions. Most Matrisome proteins are shared across conditions, with the most unique proteins being identified by the benchmark.
