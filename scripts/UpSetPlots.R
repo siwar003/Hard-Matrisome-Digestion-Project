@@ -8,22 +8,49 @@ pkgs <- c("UpSetR", "tidyverse", "tools", "grid")
 new_pkgs <- pkgs[!pkgs %in% installed.packages()[, "Package"]]
 if (length(new_pkgs)) install.packages(new_pkgs, repos = "https://cloud.r-project.org")
 invisible(lapply(pkgs, library, character.only = TRUE))
+#!/usr/bin/env Rscript
 
-# ── 1.  User-defined paths  ───────────────────────────────────────────────────
-PROTEIN_DIR    <- "C:/Users/Siwar/Desktop/Hard Matrisome Digestion/Search_result (1)/protein/filtered_gallus"
+suppressPackageStartupMessages({
+  library(dplyr)
+  library(ggplot2)
+  library(readr)
+})
 
-GMT_MATRISOME  <- "C:/Users/Siwar/Downloads/NABA_MATRISOME.v2026.1.Hs.gmt"
-GMT_CORE       <- "C:/Users/Siwar/Downloads/NABA_CORE_MATRISOME.v2026.1.Hs.gmt"
-GMT_AFFILIATED <- "C:/Users/Siwar/Downloads/NABA_ECM_AFFILIATED.v2026.1.Hs.gmt"
-GMT_REGULATORS <- "C:/Users/Siwar/Downloads/NABA_ECM_REGULATORS.v2026.1.Hs.gmt"
-GMT_COLLAGENS  <- "C:/Users/Siwar/Downloads/NABA_COLLAGENS.v2026.1.Hs.gmt"
-GMT_PROTEOGLYCAN <- "C:/Users/Siwar/Downloads/NABA_PROTEOGLYCANS.v2026.1.Hs.gmt"
-GMT_GLYCOPROTEIN <- "C:/Users/Siwar/Downloads/NABA_ECM_GLYCOPROTEINS.v2026.1.Hs.gmt"
-GMT_BASEMENT   <- "C:/Users/Siwar/Downloads/NABA_BASEMENT_MEMBRANES.v2026.1.Hs.gmt"
-GMT_ASSOCIATED <- "C:/Users/Siwar/Downloads/NABA_MATRISOME_ASSOCIATED.v2026.1.Hs.gmt"
+args <- commandArgs(trailingOnly = TRUE)
 
-OUTPUT_DIR     <- file.path(dirname(PROTEIN_DIR), "upset_plots")
-dir.create(OUTPUT_DIR, showWarnings = FALSE, recursive = TRUE)
+# ── 1. Input / Output directories  ──────────────────────────────
+input_dir <- if (length(args) >= 1) {
+  args[[1]]
+} else {
+  file.path("data", "protein")
+}
+
+reference_dir <- if (length(args) >= 2) {
+  args[[2]]
+} else {
+  file.path("reference")
+}
+
+output_dir <- if (length(args) >= 3) {
+  args[[3]]
+} else {
+  file.path("results", "upset_plots")
+}
+
+dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
+
+# ── 2. File paths (relative, GitHub-friendly) ─────────────────────────────────
+PROTEIN_DIR <- input_dir
+
+GMT_MATRISOME    <- file.path(reference_dir, "NABA_MATRISOME.v2026.1.Hs.gmt")
+GMT_CORE         <- file.path(reference_dir, "NABA_CORE_MATRISOME.v2026.1.Hs.gmt")
+GMT_AFFILIATED   <- file.path(reference_dir, "NABA_ECM_AFFILIATED.v2026.1.Hs.gmt")
+GMT_REGULATORS   <- file.path(reference_dir, "NABA_ECM_REGULATORS.v2026.1.Hs.gmt")
+GMT_COLLAGENS    <- file.path(reference_dir, "NABA_COLLAGENS.v2026.1.Hs.gmt")
+GMT_PROTEOGLYCAN <- file.path(reference_dir, "NABA_PROTEOGLYCANS.v2026.1.Hs.gmt")
+GMT_GLYCOPROTEIN <- file.path(reference_dir, "NABA_ECM_GLYCOPROTEINS.v2026.1.Hs.gmt")
+GMT_BASEMENT     <- file.path(reference_dir, "NABA_BASEMENT_MEMBRANES.v2026.1.Hs.gmt")
+GMT_ASSOCIATED   <- file.path(reference_dir, "NABA_MATRISOME_ASSOCIATED.v2026.1.Hs.gmt")
 
 # ── 2.  Helper: read a .gmt file → character vector of gene symbols ───────────
 read_gmt <- function(path) {
@@ -261,7 +288,7 @@ for (cat_name in names(categories)) {
   }
   
   safe_name <- gsub("[^A-Za-z0-9_-]", "_", cat_name)
-  out_png   <- file.path(OUTPUT_DIR, paste0("upset_", safe_name, ".png"))
+  out_png   <- file.path(output_dir, paste0("upset_", safe_name, ".png"))
   
   tryCatch({
     png(out_png, width = 2600, height = 1700, res = 200)
