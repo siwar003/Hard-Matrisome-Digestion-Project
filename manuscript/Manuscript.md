@@ -15,15 +15,13 @@
 
 ## Introduction
 
-The extracellular matrix (ECM) is an intricate network of large, heavily crosslinked proteins that provide tissue mechanical support and regulate cellular migration, adhesion, polarization, differentiation, and apoptosis. The ECM contains highly insoluble core components such as fibrillar collagens and elastin, as well as basement-membrane proteins that form sheet-like structures for support. Alterations in ECM composition and architecture are strongly implicated in cancer metastasis and the pathogenesis of many other diseases. Therefore, accurate characterization of the ECM is crucial for understanding disease mechanisms and for identifying therapeutic targets and strategies, and bottom-up proteomics has developed as an attractive tool to probe the profile and quantify the ECM <sup>1,2</sup>.
+The extracellular matrix (ECM) is an intricate network of large, heavily crosslinked proteins that provide tissue mechanical support and regulate cellular migration, adhesion, polarization, differentiation, and apoptosis. The ECM contains highly insoluble core components such as fibrillar collagens and elastin, as well as basement-membrane proteins that form sheet-like structures for support. Alterations in ECM composition and architecture are strongly implicated in cancer metastasis and disease pathogenesis. Therefore, accurate characterization of the ECM is crucial for understanding disease mechanisms and for identifying therapeutic targets and strategies, and bottom-up proteomics has developed as an attractive tool to probe and quantify the ECM <sup>1,2</sup>.
 
-Because of the extensive covalent crosslinking and rigid triple-helical structure of collagens, which are a dominant component of the ECM, the ECM is notoriously difficult to solubilize and digest for bottom-up proteomics. Specialized extraction strategies are often required to access ECM proteins (dubbed the "Matrisome"), and most protocols utilize harsh chemical extractions and detergents. Common protocols include sequential depletion of cellular proteins using buffers of varying salt concentration, detergent composition, and pH (decellularization), use of photocleavable surfactants (e.g., Azo), extraction with strong denaturants such as urea, sodium dodecyl sulfate (SDS) or guanidine hydrochloride (Gnd-HCl) followed by hydroxylamine (HA), and chemical cleavage approaches such as CNBr <sup>3-5</sup>.
+Because of the extensive covalent crosslinking and rigid triple-helical structure of collagens, which are a dominant component of the ECM, the ECM is notoriously difficult to solubilize and digest for bottom-up proteomics. Specialized extraction strategies are often required to access ECM proteins (dubbed the "Matrisome"), and most protocols utilize harsh chemical extractions and detergents. Common protocols include sequential depletion of cellular proteins using buffers of varying salt concentration, detergent composition, and pH to enrich for the ECM (decellularization), the usage of photocleavable surfactants (e.g., Azo), extraction with strong denaturants such as urea, sodium dodecyl sulfate (SDS) or guanidine hydrochloride (Gnd-HCl) followed by hydroxylamine (HA), and chemical cleavage approaches such as CNBr <sup>3-5</sup>.
 
-An underexplored approach for improving collagen accessibility is expansion of dried collagen-rich tissues through heat and rapid steam generation. It has been previously demonstrated that short-term boiling as a pre-treatment for enzymatic hydrolysis of collagen-rich tissue increases protein yield noticeably, but long-term heating at much higher temperatures remains understudied <sup>6</sup>. Microthermal studies on mouse-derived tail tendons show that residual, strongly hydrogen-bonded water in dry collagen rapidly evaporates during brief exposure to high temperatures at 150 +/- 10 degrees C <sup>7</sup>. Such rapid vaporization generates internal pressure that expands the porous architecture and internal surface area of certain dried collagen-rich foods in some culinary practices (e.g. fish maw, pork rinds).
+An underexplored approach for improving collagen accessibility is expansion of dried collagen-rich tissues through heat and rapid steam generation. It has been previously demonstrated that short-term boiling as a pre-treatment for enzymatic hydrolysis of collagen-rich tissue increases protein yield noticeably, but long-term heating at much higher temperatures remains understudied <sup>6</sup>. Microthermal studies on mouse-derived tail tendons show that residual, strongly hydrogen-bonded water in dry collagen rapidly evaporates during brief exposure to high temperatures at 150 +/- 10 °C <sup>7</sup>. Such rapid vaporization generates internal pressure that expands the porous architecture and internal surface area of certain dried collagen-rich foods in some culinary practices (e.g. fish maw, pork rinds). This technique can be leveraged in sample preparation steps to make collagen more accessible to subsequent thermal denaturation and enzymatic digestion. Subsequent, extensive hot-water incubation at 80 °C, which is above the denaturation temperature of hydrated collagen I of 65 +/- 10 °C and is the temperature at which water absorption was determined to reach its maximum for hydrated collagen <sup>8</sup>, further disrupts intramolecular hydrogen bonding and crosslinking in the triple helix, yielding lower-molecular-weight collagen fragments that are more easily solubilized, digested, and identified by mass spectrometry <sup>7,9</sup>.
 
-This technique can be leveraged in sample preparation steps to make collagen more accessible to subsequent thermal denaturation and enzymatic digestion. Subsequent, extensive hot-water incubation at 80 degrees C, which is above the denaturation temperature of hydrated collagen I of 65 +/- 10 degrees C and is the temperature at which water absorption was determined to reach its maximum for hydrated collagen <sup>8</sup>, further disrupts intramolecular hydrogen bonding and crosslinking in the triple helix, yielding lower-molecular-weight collagen fragments that are more easily solubilized, digested, and identified by mass spectrometry <sup>7,9</sup>.
-
-Here, we describe and validate a two-step approach for enhancing ECM solubilization and enrichment by leveraging heat treatment via chemical-free means. In this protocol, a brief high-temperature expansion (via heating at 180 degrees C) of dried chicken-derived tendons is followed by short or prolonged soaking in hot water (80 degrees C) or collagenase type I (45 degrees C for 1 hour). We demonstrate that puffing combined with hot-water treatment and collagenase increases solubility and enriches ECM protein signals while reducing reliance on harsh detergents. Solubilized protein was digested using standard bottom-up proteomics techniques and analyzed by LC-MS/MS. The method is tested on chicken-derived tendon tissue, and the treatments were directly compared to a gold-standard ECM decellularization protocol that enriches the ECM via sequential depletion of proteins via incubation in various buffers. The heat-based methods offered superior Matrisome enrichment and a high selective enrichment for collagens.
+Here, we describe and validate a two-step approach for enhancing ECM solubilization and enrichment by leveraging heat treatment via chemical-free means. In this protocol, a brief high-temperature expansion (via heating at 180 °C) of dried chicken-derived tendons is followed by short or prolonged soaking in hot water (80 °C) or collagenase type I (45 °C for 1 hour). We demonstrate that puffing combined with hot-water treatment and collagenase enriches for collagen proteins while reducing reliance on harsh detergents. Solubilized protein was digested using standard bottom-up proteomics techniques and analyzed by LC-MS/MS. The method is tested on chicken-derived tendon tissue, and the treatments were benchmarked to a widely-used ECM decellularization protocol that enriches the ECM via sequential depletion of proteins through incubation in various buffers. The heat-based methods offered superior Matrisome enrichment and a high selective enrichment for collagens (BACK THIS UP WITH STATISTICS).
 
 ---
 
@@ -31,36 +29,36 @@ Here, we describe and validate a two-step approach for enhancing ECM solubilizat
 
 ### Tissue preparation and heat treatment
 
-Chicken-feet-derived tendons were dissected and washed with ice-cold PBS to remove contaminants and then dried in a lab oven to allow for rapid steam generation in subsequent heating in canola oil. The average mass of the dried tendons was 9.7 +/- 1.9 mg, and they were briefly submerged in canola oil at 180 degrees C on a hot plate with a magnetic stir bar for 5-10 seconds until there was rapid expansion of tissue. The temperature of 180 degrees C was decided after preliminary testing of puffing efficiency at different temperatures of 140 degrees C, 160 degrees C, and 180 degrees C. Heating at 180 degrees C achieved the most rapid and obvious expansion with minimal browning (Figure 1). Samples were removed as soon as possible after expansion with metal tongs to reduce instances of Maillard reactions and sample browning, which would promote crosslinking and aggregation.
+Chicken-feet-derived tendons were dissected and washed with ice-cold PBS to remove contaminants and then dried in a lab oven to allow for rapid steam generation in subsequent heating in canola oil. The average mass of the dried tendons was 9.7 +/- 1.9 mg, and they were briefly submerged in canola oil at 180 °C on a hot plate with a magnetic stir bar for 5-10 seconds until there was rapid expansion of tissue. The temperature of 180 °C was decided after preliminary testing of puffing efficiency at different temperatures of 140 °C, 160 °C, and 180 °C. Heating at 180 °C achieved the most rapid and obvious expansion with minimal browning (Figure 1). Samples were removed as soon as possible after expansion with metal tongs to reduce instances of Maillard reactions and sample browning, which would promote crosslinking and aggregation.
 
 <p align="center">
   <img src="../figures/tendon_before.png" width="300"/>
   <img src="../figures/tendon_after.png" width="300"/>
 </p>
 
-**Figure 1.** Photograph of dried tendons (left) before and (right) after heating in canola oil at 180 degrees C, demonstrating successful expansion with minimal browning.
+**Figure 1.** Photograph of dried tendons (left) before and (right) after heating in canola oil at 180 °C, demonstrating successful expansion with minimal browning.
 
-Heat-treated tendons were then incubated in 1.5 mL chloroform under mild agitation for 45-60 minutes at room temperature to delipidate the sample and remove the bulk of surface oil. The tendons were then removed from the chloroform wash and incubated in water at either room temperature or 80 degrees C for 1 hour or 48 hours, according to their assigned conditions (Table 1). Collagenase-treated samples were incubated with 500 uL of 2 mg/mL (0.2% w/v) collagenase type I, to allocate approximately 1 mg of collagenase for ~10 mg of tissue for 1 hour at 45 degrees C <sup>10,11</sup>. The PBS buffer was also supplemented with 0.9 mM CaCl2 to stabilize collagenase activity. Samples were then centrifuged after treatment and protein precipitation using chloroform and methanol was performed.
+Heat-treated tendons were then incubated in 1.5 mL chloroform under mild agitation for 45-60 minutes at room temperature to delipidate the sample and remove the bulk of surface oil. The tendons were then removed from the chloroform wash and incubated in water at either room temperature or 80 °C for 1 hour or 48 hours, according to their assigned conditions (Table 1). Collagenase-treated samples were incubated with 500 uL of 2 mg/mL (0.2% w/v) collagenase type I, to allocate approximately 1 mg of collagenase for ~10 mg of tissue for 1 hour at 45 °C <sup>10,11</sup>. The PBS buffer was also supplemented with 0.9 mM CaCl2 to stabilize collagenase activity. Samples were then centrifuged after treatment and protein precipitation using chloroform and methanol was performed.
 
 #### Table 1. Experimental conditions
 
-| Code | Condition | Pre-heat (180 degrees C) | Solvent / Enzyme | Incubation Temp | Duration |
+| Code | Condition | Pre-heat (180 °C) | Solvent / Enzyme | Incubation Temp | Duration |
 |:----:|:----------|:------------------------:|:-----------------|:---------------:|:--------:|
-| S | Short heat | No | Water | 80 degrees C | 1 h |
-| SF | High heat / Short heat | Yes | Water | 80 degrees C | 1 h |
-| L | Long heat | No | Water | 80 degrees C | 48 h |
-| LF | High heat / Long heat | Yes | Water | 80 degrees C | 48 h |
-| C | Collagenase | No | Collagenase I | 45 degrees C | 1 h |
-| CF | High heat / Collagenase | Yes | Collagenase I | 45 degrees C | 1 h |
+| S | Short heat | No | Water | 80 °C | 1 h |
+| SF | High heat / Short heat | Yes | Water | 80 °C | 1 h |
+| L | Long heat | No | Water | 80 °C | 48 h |
+| LF | High heat / Long heat | Yes | Water | 80 °C | 48 h |
+| C | Collagenase | No | Collagenase I | 45 °C | 1 h |
+| CF | High heat / Collagenase | Yes | Collagenase I | 45 °C | 1 h |
 | RT | Cold water | No | Water | RT | 48 h |
 | RTF | High heat / Cold water | Yes | Water | RT | 48 h |
 | N | Benchmark | No | Naba decellularization | -- | -- |
 
 ### Solubilization efficiency
 
-A clear correlation was observed between the intensity of the heat treatment and the degree of tissue solubilization. Samples subject to heat treatment at 180 degrees C prior to incubation swelled significantly upon rehydration in their solvents. Samples subjected to extended incubation (48 h at 80 degrees C) exhibited complete gelatinization of the supernatant, whereas shorter incubations (1 h at 80 degrees C) showed only localized gelatinization immediately surrounding the tendon. The most dramatic difference in size reduction after incubation between the heated and non-heated samples occurred for the collagenase-treated samples. Samples that were heat-treated prior to collagenase treatment notably decreased in size compared to collagenase-treated samples that did not undergo heat treatment. This suggests that the combination of high-temperature expansion increased accessibility of collagenase, leading to more efficient digestion in the 1-hour incubation period.
+A clear correlation was observed between the intensity of the heat treatment and the degree of tissue solubilization. Samples subject to heat treatment at 180 °C prior to incubation swelled significantly upon rehydration in their solvents. Samples subjected to extended incubation (48 h at 80 °C) exhibited complete gelatinization of the supernatant, whereas shorter incubations (1 h at 80 °C) showed only localized gelatinization immediately surrounding the tendon. The most dramatic difference in size reduction after incubation between the heated and non-heated samples occurred for the collagenase-treated samples. Samples that were heat-treated prior to collagenase treatment notably decreased in size compared to collagenase-treated samples that did not undergo heat treatment. This suggests that the combination of high-temperature expansion increased accessibility of collagenase, leading to more efficient digestion in the 1-hour incubation period.
 
-The mass of the remaining insoluble pellet, containing cell debris and insoluble ECM proteins that did not solubilize during treatment, was compared to the original starting dry mass of the sample to calculate the average decrease in sample size. The largest degree of solubilization was achieved by the heat-treated, collagenase-treated samples, with about 89.6% of the original dry mass getting solubilized. The least efficient solubilization was achieved by the non-heat-treated 1-hour 80 degrees C incubated samples, with an average of 30.3% solubilization of the original dry mass.
+The mass of the remaining insoluble pellet, containing cell debris and insoluble ECM proteins that did not solubilize during treatment, was compared to the original starting dry mass of the sample to calculate the average decrease in sample size. The largest degree of solubilization was achieved by the heat-treated, collagenase-treated samples, with about 89.6% of the original dry mass getting solubilized. The least efficient solubilization was achieved by the non-heat-treated 1-hour 80 °C incubated samples, with an average of 30.3% solubilization of the original dry mass.
 
 <p align="center">
   <img src="../figures/solubilization_efficiency.png" width="700"/>
@@ -84,7 +82,7 @@ After the supernatants were isolated, they were digested overnight with trypsin,
 | High heat / Long heat | 1,252 | 1,184 | 94.6 |
 | Benchmark | 2,623 | 1,748 | 66.6 |
 
-The benchmark condition yielded the highest number of Matrisome PSMs with 1,748, but conditions with the pre-heating at 180 degrees C step exhibited the highest *proportion* of Matrisome PSMs. The condition receiving the pre-heating step and subsequent 80 degrees C water incubation at 48 hours and 1 hour achieved the highest enrichment at 94.6% and 95.5%, respectively. Notably, collagenase conditions achieved the lowest enrichment with the highest degree of variability.
+The benchmark condition yielded the highest number of Matrisome PSMs with 1,748, but conditions with the pre-heating at 180 °C step exhibited the highest *proportion* of Matrisome PSMs. The condition receiving the pre-heating step and subsequent 80 °C water incubation at 48 hours and 1 hour achieved the highest enrichment at 94.6% and 95.5%, respectively. Notably, collagenase conditions achieved the lowest enrichment with the highest degree of variability.
 
 > **Script:** The stacked bar chart below was generated using [`../scripts/psm_enrichment_stacked_bar.R`](../scripts/psm_enrichment_stacked_bar.R)
 
@@ -117,7 +115,7 @@ Sequence coverage, which is the percentage of a protein's peptide sequence ident
 | **ECM Affiliated** | 3.7 | 9.0 | 7.4 | 9.0 | 4.3 | 3.4 | 23.4 | 30.1 | -- |
 | **ECM Regulators** | 5.7 | 5.8 | 9.1 | 5.8 | 3.1 | 3.1 | 12.4 | 9.9 | -- |
 
-*HH = High heat (pre-heating at 180 degrees C). "--" indicates no proteins detected in that subset for that condition.*
+*HH = High heat (pre-heating at 180 °C). "--" indicates no proteins detected in that subset for that condition.*
 
 The treatments with the highest median sequence coverage for core Matrisome proteins were the short heat treatments, with and without the pre-heating step at 17.4-17.5%, closely followed by the benchmark at 16.7%. For non-core Matrisome proteins, the benchmark outperformed all other conditions in capturing the broader Matrisome, achieving a median sequence coverage of 19.9%.
 
@@ -219,13 +217,13 @@ However, collagenase-treated samples exhibited greater variability than all othe
 
 ## Discussion
 
-Here we explore the effects of physical puffing of dried collagen-rich tissue via rapid exposure to high heat at 180 degrees C paired with incubation in hot water at 80 degrees C for an extended time over 1 hour and 48 hours. We demonstrated that high heat exposure and the physical reconfiguration of the extracellular matrix in collagen-rich tissue, such as tendon, is heavily biased towards collagen identification and coverage.
+Here we explore the effects of physical puffing of dried collagen-rich tissue via rapid exposure to high heat at 180 °C paired with incubation in hot water at 80 °C for an extended time over 1 hour and 48 hours. We demonstrated that high heat exposure and the physical reconfiguration of the extracellular matrix in collagen-rich tissue, such as tendon, is heavily biased towards collagen identification and coverage.
 
 Since the heat-based methods, especially those with the pre-heating step, achieved significantly higher PSM enrichment scores than the benchmark and significantly fewer non-Matrisome proteins, we hypothesize that the heat-based methods are more efficient at decellularizing collagen-rich tissue. This may be due to the high heat expanding the rich collagenous networks that sequester cells in the tendon tissue and to the heat effectively degrading non-ECM cellular proteins. As a result, collagens withstand the heat stress and unwind, allowing for subsequent solubilization by water and digestion via trypsin. The decellularization method seems to be merely reducing the number of non-ECM, cellular proteins (i.e. depleting them) while the heat-based methods are destroying them, preventing them from ever being detected. This may also explain why the heat-based methods achieved higher enrichment by PSMs, especially when combined with the pre-heating step, compared to the benchmark (~95% vs ~66%) but achieved comparably high enrichment by protein intensity.
 
 Since these heat-based methods are heavily biased towards collagen, there are several applications and advantages. This method could be more useful for collagen-rich clinical samples such as different fibrosis models that are collagen-dominated. This method could also be used in biomaterial studies to solubilize collagen for use in tissue engineering. It could also be used as a method to remove collagens from the ECM to study other non-collagen ECM proteins in conjunction with decellularization to boost the identification of non-collagen Matrisome proteins since in all conditions, collagen proteins dominated the signal and masked the identification of other proteins. However, this selectivity towards collagen can be a flaw if studying the broader Matrisome to get an idea of broader Matrisome biology. Ultimately, these heat-based methods can be combined with decellularization protocols to potentially offer a wider view of the Matrisome.
 
-An interesting visual observation in the samples that underwent the pre-heating step at 180 degrees C followed by a 48-hour incubation in 80 degrees C water is the development of a dark red insoluble pellet with a surrounding yellow web-like structure. In these samples, there was slight loss in volume. Upon contact with 8 M urea, the web-like crust seems to be a highly insoluble ECM-enriched fraction that resists heating, prolonged high-temperature aqueous incubation, and chaotropic denaturation. It may also have retained some of the solutions it was incubated in as it settled on the tube wall, sequestering the water the tendon was incubating into the wall-bound ECM gel.
+An interesting visual observation in the samples that underwent the pre-heating step at 180 °C followed by a 48-hour incubation in 80 °C water is the development of a dark red insoluble pellet with a surrounding yellow web-like structure. In these samples, there was slight loss in volume. Upon contact with 8 M urea, the web-like crust seems to be a highly insoluble ECM-enriched fraction that resists heating, prolonged high-temperature aqueous incubation, and chaotropic denaturation. It may also have retained some of the solutions it was incubated in as it settled on the tube wall, sequestering the water the tendon was incubating into the wall-bound ECM gel.
 
 The separation of this material from the darker, compact pellet may reflect differential partitioning of ECM and non-ECM components under extreme thermal processing conditions. The remaining darker pellets may contain non-ECM insoluble components, such as general cell debris, oxidized proteins, heme, myoglobin, or Maillard reaction products from the extensive exposure to high-heat conditions. As a result, the heat treatment and extensive hot water incubation seemed to have induced a physical separation of ECM from non-ECM components, strengthening the claim that the involvement of high heat promotes excellent decellularization and fractionation of the collagen-rich tissue.
 
@@ -237,7 +235,7 @@ In summary, we developed and validated a purely heat-based method for the extrac
 
 Rather than replacing any existing methodologies, this heat-based method can be used in conjunction with existing methods to get a closer look at the Matrisome beyond collagens. Using the heat-based and decellularization method in combination for collagen-rich sample decellularization can more effectively deplete the sample of non-ECM proteins and collagens to allow for the analysis of non-collagen Matrisome proteins, since Matrisome proteomics datasets are often dominated by collagens and hinder the identification and quantification of the less abundant, smaller non-collagen Matrisome proteins.
 
-However, there are key limitations unique to this method. Due to the high use of heat (180 degrees C and 80 degrees C), Maillard reactions can cause crosslinking that reduces solubility if samples are heated for too long at 180 degrees C. Additionally, while bias towards collagens can be advantageous, it also limits applicability and masks the broader Matrisome. Also, although the method is primarily chemical-free, the chloroform extraction step may produce variability so other methods for delipidation prior to mass spectrometry can be employed instead.
+However, there are key limitations unique to this method. Due to the high use of heat (180 °C and 80 °C), Maillard reactions can cause crosslinking that reduces solubility if samples are heated for too long at 180 °C. Additionally, while bias towards collagens can be advantageous, it also limits applicability and masks the broader Matrisome. Also, although the method is primarily chemical-free, the chloroform extraction step may produce variability so other methods for delipidation prior to mass spectrometry can be employed instead.
 
 In the future, we aim to further explore how this method preserves or alters the natural post-translational modification landscape of the Matrisome compared to chemical-based protocols. Because this method primarily relies on physical rather than chemical disruption, it may have the potential to preserve post-translational modifications more efficiently than many conventional protocols. This can be crucial for identifying various proteoforms of collagens that are relevant for disease. We also aim to test this method on non-collagen-rich, less stubborn or softer tissue and compare it to the standard decellularization protocol to further investigate whether the heat is in fact destroying non-ECM proteins selectively.
 
@@ -263,11 +261,11 @@ Chicken-foot tendons were dissected and rinsed on ice with ice-cold PBS (1x), 70
 
 ### Tissue drying and preparation
 
-Samples were dried in a laboratory oven at 60 degrees C with tube caps open and tubes spaced equally apart on a metal tube holder. Each tube was weighed hourly, and when mass stabilized across two consecutive hourly measurements, the samples were removed from the oven and the final dry mass recorded.
+Samples were dried in a laboratory oven at ~60 °C with tube caps open and tubes spaced equally apart on a metal tube holder. Each tube was weighed hourly, and when mass stabilized across two consecutive hourly measurements, the samples were removed from the oven and the final dry mass recorded.
 
 ### Tissue heat treatment (high-temperature expansion / "puffing")
 
-After drying, half of the samples were stored at 4 degrees C in closed tubes, while the other half were processed by heating in oil. Approximately 150 mL of canola oil was heated in a glass beaker on a heating plate inside a fume hood. The temperature of the oil was carefully monitored during the entire duration of heating in oil using a thermocouple, and a magnetic stir bar was used to distribute heat equally. When the oil reached 180 degrees C, dried tendon pieces were briefly immersed (5-10 s) one at a time using metal tongs, removed immediately after rapid expansion, and blotted on lint-free paper to remove excess oil. Samples were allowed to cool to room temperature, photographed, and returned to their tubes.
+After drying, half of the samples were stored at 4 °C in closed tubes, while the other half were processed by heating in oil. Approximately 150 mL of canola oil was heated in a glass beaker on a heating plate inside a fume hood. The temperature of the oil was carefully monitored during the entire duration of heating in oil using a thermocouple, and a magnetic stir bar was used to distribute heat equally. When the oil reached 180 °C, dried tendon pieces were briefly immersed (5-10 s) one at a time using metal tongs, removed immediately after rapid expansion, and blotted on lint-free paper to remove excess oil. Samples were allowed to cool to room temperature, photographed, and returned to their tubes.
 
 ### Chloroform wash and heat treatment
 
@@ -275,9 +273,9 @@ Before treatment in water and collagenase solution, each heated tendon was place
 
 ### Transferring soluble fractions
 
-After treatment, samples were centrifuged at 18,000 x g for 20 min at 4 degrees C. Supernatants were carefully transferred to pre-weighed, pre-labeled low-bind tubes and designated as the soluble fraction. Remaining pellets (insoluble fraction) were air-dried on a metal rack at 60 degrees C, and after drying, insoluble pellets were weighed and the mass recorded.
+After treatment, samples were centrifuged at 18,000 x g for 20 min at 4 °C. Supernatants were carefully transferred to pre-weighed, pre-labeled low-bind tubes and designated as the soluble fraction. Remaining pellets (insoluble fraction) were air-dried on a metal rack at 60 °C, and after drying, insoluble pellets were weighed and the mass recorded.
 
-*Note:* Since some samples had a thicker gelatin layer upon cooling, they were briefly re-heated at 37 degrees C after centrifugation until the gelatin was warmed and liquified for transfer by pipetting into their designated tubes.
+*Note:* Since some samples had a thicker gelatin layer upon cooling, they were briefly re-heated at 37 °C after centrifugation until the gelatin was warmed and liquified for transfer by pipetting into their designated tubes.
 
 ### Lipid cleanup and protein precipitation
 
@@ -292,11 +290,11 @@ A 150 uL aliquot of each soluble fraction was transferred to a new, pre-weighed 
 
 ### Urea solubilization
 
-Dried protein pellets were weighed and the mass recorded. To each pellet, 50 uL of 8 M urea (in 100 mM Tris, pH 8.5) was added. Samples were vortexed and sonicated until pellets were solubilized. Larger or more stubborn pellets were incubated at 37 degrees C for up to 2 h under gentle agitation, or more 8 M urea was added to them.
+Dried protein pellets were weighed and the mass recorded. To each pellet, 50 uL of 8 M urea (in 100 mM Tris, pH 8.5) was added. Samples were vortexed and sonicated until pellets were solubilized. Larger or more stubborn pellets were incubated at 37 °C for up to 2 h under gentle agitation, or more 8 M urea was added to them.
 
 ### Protein digestion (reduction, alkylation, trypsinization)
 
-Samples were diluted to 2 M urea by adding 100 mM Tris. TCEP was added to a final concentration of 5 mM as a reduction step, and samples were incubated at room temperature in the dark for 20 min. CAA was then added to a final concentration of 10 mM as an alkylation step and incubated at room temperature in the dark for 15 min. CaCl2 was added to a final concentration of 1 mM. Trypsin was added at a 1:50 w/w enzyme:protein ratio, using the dried pellet mass to estimate protein amount, and samples were incubated overnight (~14-18 h) at 37 degrees C. The digestions were quenched by adding 96% formic acid to a final concentration of 1%, and samples were loaded onto Evotips.
+Samples were diluted to 2 M urea by adding 100 mM Tris. TCEP was added to a final concentration of 5 mM as a reduction step, and samples were incubated at room temperature in the dark for 20 min. CAA was then added to a final concentration of 10 mM as an alkylation step and incubated at room temperature in the dark for 15 min. CaCl2 was added to a final concentration of 1 mM. Trypsin was added at a 1:50 w/w enzyme:protein ratio, using the dried pellet mass to estimate protein amount, and samples were incubated overnight (~14-18 h) at 37 °C. The digestions were quenched by adding 96% formic acid to a final concentration of 1%, and samples were loaded onto Evotips.
 
 ### LC-MS/MS
 
@@ -304,7 +302,7 @@ Samples were diluted to 2 M urea by adding 100 mM Tris. TCEP was added to a fina
 
 ### Solubilized protein measurement
 
-The remaining insoluble pellets were washed with 1 mL of ice-cold acetone (-20 degrees C), spun down, and the acetone carefully removed. The pellets were air-dried and weighed. Using the mass of the insoluble pellets, the solubilization efficiency was calculated.
+The remaining insoluble pellets were washed with 1 mL of ice-cold acetone (-20 °C), spun down, and the acetone carefully removed. The pellets were air-dried and weighed. Using the mass of the insoluble pellets, the solubilization efficiency was calculated.
 
 ### Comparison to Naba protocol
 
@@ -326,17 +324,17 @@ Three tendons weighing ~30 mg each were first cut into small pieces using steril
 
 ### Compartment protein extraction
 
-For the extraction of cytosolic proteins, samples with the added Buffer C were placed on a tube rotator for 20 min at 4 degrees C. Samples were then centrifuged at 16,000 x g for 20 min at 4 degrees C. After centrifuging, the supernatant was discarded.
+For the extraction of cytosolic proteins, samples with the added Buffer C were placed on a tube rotator for 20 min at 4 °C. Samples were then centrifuged at 16,000 x g for 20 min at 4 °C. After centrifuging, the supernatant was discarded.
 
-1. The pellet was resuspended in 120 uL of Buffer W, placed on a tube rotator for 20 min at 4 degrees C, and then centrifuged for 20 min at 4 degrees C. The supernatant was discarded.
-2. The pellet was resuspended in 45 uL of Buffer N supplemented with benzonase for nuclear protein extraction. Samples were placed on a tube rotator for 30 min at 4 degrees C, then centrifuged for 30 min at 4 degrees C. The centrifugation step was repeated once more, and the supernatants were discarded.
-3. The pellet was resuspended in 30 uL of Buffer M for membrane protein extraction. Samples were placed on a tube rotator for 30 min at 4 degrees C, then centrifuged for 30 min at 4 degrees C. The supernatant was discarded.
-4. The pellet was resuspended in 60 uL of Buffer CS for cytoskeletal protein extraction. Samples were placed on a tube rotator for 30 min at 4 degrees C, then centrifuged for 30 min at 4 degrees C. The supernatant was removed, and the pellet was resuspended in 45 uL of Buffer C, rotated for 20 min at 4 degrees C, centrifuged for 20 min at 4 degrees C, and the supernatant removed.
+1. The pellet was resuspended in 120 uL of Buffer W, placed on a tube rotator for 20 min at 4 °C, and then centrifuged for 20 min at 4 °C. The supernatant was discarded.
+2. The pellet was resuspended in 45 uL of Buffer N supplemented with benzonase for nuclear protein extraction. Samples were placed on a tube rotator for 30 min at 4 °C, then centrifuged for 30 min at 4 °C. The centrifugation step was repeated once more, and the supernatants were discarded.
+3. The pellet was resuspended in 30 uL of Buffer M for membrane protein extraction. Samples were placed on a tube rotator for 30 min at 4 °C, then centrifuged for 30 min at 4 °C. The supernatant was discarded.
+4. The pellet was resuspended in 60 uL of Buffer CS for cytoskeletal protein extraction. Samples were placed on a tube rotator for 30 min at 4 °C, then centrifuged for 30 min at 4 °C. The supernatant was removed, and the pellet was resuspended in 45 uL of Buffer C, rotated for 20 min at 4 °C, centrifuged for 20 min at 4 °C, and the supernatant removed.
 5. To wash off detergents, the pellet was washed in ice-cold PBS 4 times (~1 mL each, 5 min at 16,000 x g).
 
 ### Protein solubilization and digestion
 
-The pellets were left to air dry, and the dry mass was recorded. The pellets were solubilized in 50 uL 8 M urea at 37 degrees C with agitation until the pellet was no longer dissolving. The concentration of urea was brought down to 2 M using 100 mM Tris prior to digestion. Pellets were digested in the same manner as above, using the dry mass to calculate digestion reagent volume.
+The pellets were left to air dry, and the dry mass was recorded. The pellets were solubilized in 50 uL 8 M urea at 37 °C with agitation until the pellet was no longer dissolving. The concentration of urea was brought down to 2 M using 100 mM Tris prior to digestion. Pellets were digested in the same manner as above, using the dry mass to calculate digestion reagent volume.
 
 ---
 
