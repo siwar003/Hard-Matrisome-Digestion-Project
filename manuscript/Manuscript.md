@@ -52,13 +52,13 @@ Heat-treated tendons were then incubated in 1.5 mL chloroform under mild agitati
 | CF | High heat / Collagenase | Yes | Collagenase I | 45 °C | 1 h |
 | RT | Cold water | No | Water | RT | 48 h |
 | RTF | High heat / Cold water | Yes | Water | RT | 48 h |
-| N | Benchmark | No | Naba decellularization | -- | -- |
+| N | Benchmark | No | NABA Referenc decellularization | -- | -- |
 
 ### Solubilization efficiency
 
 A clear correlation was observed between the intensity of the heat treatment and the degree of tissue solubilization. Samples subject to heat treatment at 180 °C prior to incubation swelled significantly upon rehydration in their solvents. Samples subjected to extended incubation (48 h at 80 °C) exhibited complete gelatinization of the supernatant, whereas shorter incubations (1 h at 80 °C) showed only localized gelatinization immediately surrounding the tendon. The most dramatic difference in size reduction after incubation between the heated and non-heated samples occurred for the collagenase-treated samples. Samples that were heat-treated prior to collagenase treatment notably decreased in size compared to collagenase-treated samples that did not undergo heat treatment. This suggests that the combination of high-temperature expansion increased accessibility of collagenase, leading to more efficient digestion in the 1-hour incubation period.
 
-The mass of the remaining insoluble pellet, containing cell debris and insoluble ECM proteins that did not solubilize during treatment, was compared to the original starting dry mass of the sample to calculate the average decrease in sample size. The largest degree of solubilization was achieved by the heat-treated, collagenase-treated samples, with about 89.6% of the original dry mass getting solubilized. The least efficient solubilization was achieved by the non-heat-treated 1-hour 80 °C incubated samples, with an average of 30.3% solubilization of the original dry mass.
+The mass of the remaining insoluble pellet, containing cell debris and insoluble ECM proteins that did not solubilize during treatment, was compared to the original starting dry mass of the sample to calculate the average decrease in sample size. The largest degree of solubilization was achieved by the heat-treated, collagenase-treated samples, with about 89.6% of the original dry mass getting solubilized. The least efficient solubilization was achieved by the non-heat-treated, 1-hour 80 °C incubated samples, with an average of 30.3% solubilization of the original dry mass.
 
 <p align="center">
   <img src="../figures/solubilization_efficiency.png" width="700"/>
@@ -68,7 +68,7 @@ The mass of the remaining insoluble pellet, containing cell debris and insoluble
 
 ### PSM enrichment analysis
 
-After the supernatants were isolated, they were digested overnight with trypsin, and the samples were analyzed by mass spectrometry. From mass spectrometry data, the total peptide spectrum matches (PSMs) and PSMs attributed to Matrisome proteins were plotted across all conditions (Figure 3). The number of PSMs represents the number of times a peptide in each condition was matched to a spectrum during MS2, and it provides a relative measure of sample depth.
+After the supernatants were isolated, the proteins were precipitated with methanol/chloroform, and the protein pellets were re-solubilized in 8 M urea (reduced to 2M with 100 mM Tris) for overnight trypsin digestion. The  samples were then analyzed by mass spectrometry. From mass spectrometry data, the total peptide spectrum matches (PSMs) and PSMs attributed to Matrisome proteins were plotted across all conditions (Figure 3). The number of PSMs represents the number of times a peptide in each condition was matched to a spectrum during MS2, and it provides a relative measure of sample depth.
 
 #### Table 2. Total and Matrisome PSMs by condition
 
@@ -100,7 +100,7 @@ For a more accurate estimation of protein abundance, enrichment by Razor protein
 
 ### Sequence coverage
 
-Sequence coverage, which is the percentage of a protein's peptide sequence identified by mass spectrometry, was also measured between conditions. High sequence coverage increases identification confidence and is crucial for identifying different protein isoforms or proteoforms to more accurately capture ECM diversity.
+Sequence coverage, which is the percentage of a protein's amino acid sequence identified by mass spectrometry, was also measured between conditions. High sequence coverage increases identification confidence and is crucial for identifying different protein isoforms or proteoforms to more accurately capture Matrisome diversity.
 
 #### Table 3. Median sequence coverage (%) by Matrisome subset and condition
 
@@ -117,7 +117,7 @@ Sequence coverage, which is the percentage of a protein's peptide sequence ident
 
 *HH = High heat (pre-heating at 180 °C). "--" indicates no proteins detected in that subset for that condition.*
 
-The treatments with the highest median sequence coverage for core Matrisome proteins were the short heat treatments, with and without the pre-heating step at 17.4-17.5%, closely followed by the benchmark at 16.7%. For non-core Matrisome proteins, the benchmark outperformed all other conditions in capturing the broader Matrisome, achieving a median sequence coverage of 19.9%.
+The treatments with the highest median sequence coverage for core Matrisome proteins were the short heat treatments, with and without the pre-heating step, at 17.4-17.5%. This number is closely followed by the benchmark at 16.7%. For non-core Matrisome proteins, the benchmark outperformed all other conditions in capturing the broader Matrisome, achieving a median sequence coverage of 19.9%.
 
 Taking a closer look at the median sequence coverage values for the groups composing the Core Matrisome, heat treatments seem to be significantly biased towards collagen coverage and are selectively enriching for collagen much more efficiently than all other core Matrisome and non-core Matrisome proteins. The median sequence coverage for collagen achieved by the short heat treatments was 26.5-29.1%, competing with the benchmark's sequence coverage value of 30.9%. The long heat treatment also achieved high collagen sequence coverage at 21.7% and 24.9% for the treatments without and with the pre-heating steps, respectively.
 
@@ -167,9 +167,9 @@ Looking at the sequence coverage with cold-water controls in addition to the ben
 
 **Figure 5.** Sequence coverage plots including the cold water controls for additional Matrisome subsets: (a) full Matrisome, (b) basement membranes, (c) ECM affiliated, and (d) ECM regulators.
 
-### NABA subset gene matching summary
+### NABA Reference subset gene matching summary
 
-#### Table 4. Genes matched per NABA Matrisome subset (across all conditions)
+#### Table 4. Genes matched per NABA Reference Matrisome subset (across all conditions)
 
 | Subset | Matched Genes | Matched Proteins | Genes in Subset | Match Rate (%) |
 |:-------|:-------------:|:----------------:|:---------------:|:--------------:|
@@ -183,7 +183,7 @@ Looking at the sequence coverage with cold-water controls in addition to the ben
 | ECM Affiliated | 8 | 8 | 170 | 4.7 |
 | ECM Regulators | 19 | 20 | 238 | 8.0 |
 
-*Note: NABA gene sets are human-derived; match rates reflect cross-species mapping to Gallus gallus.*
+*Note: NABA Reference gene sets are human-derived; match rates reflect cross-species mapping to Gallus gallus.*
 
 ### Shared and unique Matrisome proteins
 
@@ -304,7 +304,7 @@ Samples were diluted to 2 M urea by adding 100 mM Tris. TCEP was added to a fina
 
 The remaining insoluble pellets were washed with 1 mL of ice-cold acetone (-20 °C), spun down, and the acetone carefully removed. The pellets were air-dried and weighed. Using the mass of the insoluble pellets, the solubilization efficiency was calculated.
 
-### Comparison to Naba protocol
+### Comparison to Naba Reference protocol
 
 As a benchmark comparison, separate tendon samples were decellularized using a protocol that depletes intracellular, non-ECM proteins using buffers of varying salt concentrations and pH to achieve a final ECM-enriched pellet. The starting material was 30 mg of fresh chicken foot tendon tissue washed with ice-cold PBS in the same manner as above.
 
