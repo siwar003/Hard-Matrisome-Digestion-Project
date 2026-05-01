@@ -12,10 +12,25 @@ suppressPackageStartupMessages({
 # Paths
 # -----------------------------
 
-input_csv <- "C:/Users/siwar/Desktop/filtered_onlyGallus_coverage_results/protein_row_coverage_by_subset.csv"
+args <- commandArgs(trailingOnly = TRUE)
 
-output_dir <- "C:/Users/siwar/Desktop/filtered_onlyGallus_coverage_stats"
+input_csv <- if (length(args) >= 1) {
+  args[[1]]
+} else {
+  file.path("results", "filtered_onlyGallus_coverage", "protein_row_coverage_by_subset.csv")
+}
+
+output_dir <- if (length(args) >= 2) {
+  args[[2]]
+} else {
+  file.path("results", "filtered_onlyGallus_coverage_stats")
+}
+
 dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
+
+if (!file.exists(input_csv)) {
+  stop("Could not find input CSV: ", input_csv)
+}
 
 # -----------------------------
 # Load data
@@ -23,7 +38,6 @@ dir.create(output_dir, recursive = TRUE, showWarnings = FALSE)
 
 df <- read_csv(input_csv, show_col_types = FALSE)
 
-# Make sure coverage is numeric
 df <- df %>%
   mutate(
     coverage = as.numeric(coverage),
@@ -42,7 +56,7 @@ kruskal_results <- df %>%
   group_by(subset_id, subset_label) %>%
   group_modify(~ {
     test <- kruskal.test(coverage ~ condition_label, data = .x)
-    
+
     tibble(
       statistic = unname(test$statistic),
       p_value = test$p.value
@@ -74,7 +88,7 @@ pairwise_wilcox_results <- df %>%
       p.adjust.method = "BH",
       exact = FALSE
     )
-    
+
     as.data.frame(as.table(pairwise$p.value)) %>%
       rename(
         condition_1 = Var1,
@@ -128,7 +142,7 @@ anova_results <- df %>%
   group_by(subset_id, subset_label) %>%
   group_modify(~ {
     fit <- aov(coverage ~ condition_label, data = .x)
-    
+
     tidy(fit) %>%
       filter(term == "condition_label") %>%
       transmute(
@@ -152,7 +166,7 @@ tukey_results <- df %>%
   group_modify(~ {
     fit <- aov(coverage ~ condition_label, data = .x)
     tukey <- TukeyHSD(fit)
-    
+
     as.data.frame(tukey$condition_label) %>%
       tibble::rownames_to_column("comparison") %>%
       separate(comparison, into = c("condition_1", "condition_2"), sep = "-") %>%
