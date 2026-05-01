@@ -334,7 +334,7 @@ For the extraction of cytosolic proteins, samples with the added Buffer C were p
 
 ### Protein solubilization and digestion
 
-The pellets were left to air dry, and the dry mass was recorded. The pellets were solubilized in 50 uL 8 M urea at 37 °C with agitation until the pellet was no longer dissolving. The concentration of urea was brought down to 2 M using 100 mM Tris prior to digestion. Pellets were digested in the same manner as above, using the dry mass to calculate digestion reagent volume.
+The pellets were left to air dry, and the dry mass was recorded. The pellets were solubilized in 25-50 uL 8 M urea (depending on dry pellet size) at 37 °C with agitation until the pellet was no longer dissolving (no longer than 5 minutes). The concentration of urea was brought down to 2 M using 100 mM Tris prior to digestion. The equivalent of 10 μg was taken from each sample for protein digestion in the manner described above, and the digestion conditions were identical for both the benchmark and heat-dependent methods.
 
 ---
 
