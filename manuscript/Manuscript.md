@@ -52,7 +52,7 @@ Heat-treated tendons were then incubated in 1.5 mL chloroform under mild agitati
 | CF | High heat / Collagenase | Yes | Collagenase I | 45 °C | 1 h |
 | RT | Cold water | No | Water | RT | 48 h |
 | RTF | High heat / Cold water | Yes | Water | RT | 48 h |
-| N | Benchmark | No | NABA Referenc decellularization | -- | -- |
+| N | Benchmark | No | NABA Reference decellularization | -- | -- |
 
 ### Solubilization efficiency
 
