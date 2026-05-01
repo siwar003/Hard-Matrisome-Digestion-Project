@@ -296,15 +296,21 @@ Dried protein pellets were weighed and the mass recorded. To each pellet, 50 uL 
 
 Samples were diluted to 2 M urea by adding 100 mM Tris. TCEP was added to a final concentration of 5 mM as a reduction step, and samples were incubated at room temperature in the dark for 20 min. CAA was then added to a final concentration of 10 mM as an alkylation step and incubated at room temperature in the dark for 15 min. CaCl2 was added to a final concentration of 1 mM. Trypsin was added at a 1:50 w/w enzyme:protein ratio, using the dried pellet mass to estimate protein amount, and samples were incubated overnight (~14-18 h) at 37 °C. The digestions were quenched by adding 96% formic acid to a final concentration of 1%, and samples were loaded onto Evotips.
 
-### LC-MS/MS
+### LC-MS/MS and Data Processing and Database search
 
 *Instrument and acquisition details to be added.*
+Q Exactive HF Orbitrap Mass Spectrometer (Thermo Fisher Scientific) 
+DIA mode
+Samples run in a randomized manner to reduce batch effects 
+FragPipe: 
+variable mods: hydroxylation of lysine and proline
+fixed mods: oxidation of methionine and protein N-terminal acetylation
 
 ### Solubilized protein measurement
 
 The remaining insoluble pellets were washed with 1 mL of ice-cold acetone (-20 °C), spun down, and the acetone carefully removed. The pellets were air-dried and weighed. Using the mass of the insoluble pellets, the solubilization efficiency was calculated.
 
-### Comparison to Naba Reference protocol
+### Comparison to decellularization protocol
 
 As a benchmark comparison, separate tendon samples were decellularized using a protocol that depletes intracellular, non-ECM proteins using buffers of varying salt concentrations and pH to achieve a final ECM-enriched pellet. The starting material was 30 mg of fresh chicken foot tendon tissue washed with ice-cold PBS in the same manner as above.
 
@@ -335,6 +341,16 @@ For the extraction of cytosolic proteins, samples with the added Buffer C were p
 ### Protein solubilization and digestion
 
 The pellets were left to air dry, and the dry mass was recorded. The pellets were solubilized in 25-50 uL 8 M urea (depending on dry pellet size) at 37 °C with agitation until the pellet was no longer dissolving (no longer than 5 minutes). The concentration of urea was brought down to 2 M using 100 mM Tris prior to digestion. The equivalent of 10 μg was taken from each sample for protein digestion in the manner described above, and the digestion conditions were identical for both the benchmark and heat-dependent methods.
+
+## Data Analysis
+
+Write about the data analysis from the R scripts (sequence coverage, % solubilization, heatmap generation, UpSet plots, etc.)
+
+## Statistical Analysis 
+
+Write about the statistical analysis from the R scripts to perform pairwise analysis
+
+
 
 ---
 
