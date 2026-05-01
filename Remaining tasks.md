@@ -1,0 +1,3 @@
+- add statistical analysis
+- collagenase search parameters to accommodate for collagenase-induced cuts prior to trypsin digestion
+- maybe redo the fried cold water control (digestion done on it was too short ~3-4 hours)
