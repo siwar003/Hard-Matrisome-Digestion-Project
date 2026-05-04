@@ -87,7 +87,7 @@ The benchmark condition yielded the highest number of Matrisome PSMs with 1,748,
 > **Script:** The stacked bar chart below was generated using [`../scripts/psm_enrichment_stacked_bar.R`](../scripts/psm_enrichment_stacked_bar.R)
 
 <p align="center">
-  <img src="../figures/PSM_enrichment_by_condition_bar_graph.png" width="700"/>
+  <img src="../figures/PSM_enrichment_by_condition_bar_graph.png.png" width="700"/>
 </p>
 
 **Figure 3.** (a) Stacked bar chart showing total and Matrisome PSMs per condition. Lighter shading indicates Matrisome PSMs; labels show Matrisome (inside) and total (above) counts. (b) Percentage of protein signal originating from Matrisome proteins by Razor intensity in each treatment.
