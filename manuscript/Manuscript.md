@@ -61,7 +61,7 @@ A clear correlation was observed between the intensity of the heat treatment and
 The mass of the remaining insoluble pellet, containing cell debris and insoluble ECM proteins that did not solubilize during treatment, was compared to the original starting dry mass of the sample to calculate the average decrease in sample size. The largest degree of solubilization was achieved by the heat-treated, collagenase-treated samples, with about 89.6% of the original dry mass getting solubilized. The least efficient solubilization was achieved by the non-heat-treated, 1-hour 80 °C incubated samples, with an average of 30.3% solubilization of the original dry mass.
 
 <p align="center">
-  <img src="../figures/solubilization_efficiency.png" width="700"/>
+  <img src="../figures/solubilization_efficiency_2.png" width="700"/>
 </p>
 
 **Figure 2.** Solubility comparison showing percentage of original dry mass solubilized for each treatment. Pre-heat treatments are shown in red; treatments without the pre-heat step are in blue.
