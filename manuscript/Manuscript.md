@@ -298,13 +298,12 @@ Samples were diluted to 2 M urea by adding 100 mM Tris. TCEP was added to a fina
 
 ### LC-MS/MS and Data Processing and Database search
 
-*More instrument and acquisition details to be added.*
-Q Exactive HF Orbitrap Mass Spectrometer (Thermo Fisher Scientific) 
-DIA mode
-Samples run in a randomized manner to reduce batch effects 
-FragPipe: 
-variable mods: hydroxylation of lysine and proline, oxidation of methionine and protein N-terminal acetylation
-fixed mods: carbamidomethylation of cysteine
+Proteomic analyses were performed using a Q Exactive HF Orbitrap mass spectrometer (Thermo Fisher Scientific) operated in data-independent acquisition (DIA) mode. Samples were analyzed in a randomized order to minimize potential batch effects.
+
+Raw data were processed using FragPipe. Database searching was performed with the following modifications: carbamidomethylation of cysteine was set as a fixed modification, while oxidation of methionine, protein N-terminal acetylation, and hydroxylation of proline and lysine were included as variable modifications.
+
+More instrument and acquisition parameters details will be added soon
+
 ### Solubilized protein measurement
 
 The remaining insoluble pellets were washed with 1 mL of ice-cold acetone (-20 °C), spun down, and the acetone carefully removed. The pellets were air-dried and weighed. Using the mass of the insoluble pellets, the solubilization efficiency was calculated.
