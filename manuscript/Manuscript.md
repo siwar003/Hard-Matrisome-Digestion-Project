@@ -343,12 +343,15 @@ The pellets were left to air dry, and the dry mass was recorded. The pellets wer
 
 ## Data Analysis
 
-Write about the data analysis from the R scripts (sequence coverage, % solubilization, heatmap generation, UpSet plots, etc.)
+Three biological replicates per condition were used. Sequence coverage values were obtained directly from the FragPipe output files Protein groups annotated as decoys or contaminants were excluded prior to analysis. For each sample, proteins were mapped to genes and matched to ECM subsets using NABA gene set annotations. Sequence coverage was then aggregated at the protein level and summarized within each condition and ECM subset. Distributions of coverage values were compared across conditions, and median sequence coverage was used as the primary summary statistic for visualization. 
+
+Matrisome enrichment was calculated as the fraction of total razor intensity attributable to NABA-defined matrisome proteins. Intensities were normalized within each sample by total signal, and enrichment was expressed as a percentage. Condition-level means and standard deviations were computed across replicates. Matrisome enrichment on the PSM level was calculated by the fraction of the sum of Matrisome PSMs over the total PSMs for each sample, and replicates of the same condition were averaged. Decoys and contaminants were excluded from analysis, and the results were then represented as a stacked bar-plot to show the portion of total PSMs from each condition attributed to Matrisome PSMs. The corresponding percentages and standard deviations were also calculated for each condition. 
+
+Protein-level overlap across experimental conditions was assessed using UpSet analysis. Replicate samples were pooled at the condition level by taking the union of detected genes, such that a gene was considered present if identified in at least one replicate. Presence/absence matrices were then constructed for each condition and used to assess overlap across conditions.
 
 ## Statistical Analysis 
 
-Write about the statistical analysis from the R scripts to perform pairwise analysis
-
+Statistical differences in sequence coverage across conditions were evaluated using Kruskal–Wallis tests, followed by pairwise Wilcoxon rank-sum tests with Benjamini–Hochberg correction. Summary statistics were calculated per condition and ECM subset.
 
 
 ---
