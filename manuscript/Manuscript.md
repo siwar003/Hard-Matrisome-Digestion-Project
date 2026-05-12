@@ -124,25 +124,25 @@ Taking a closer look at the median sequence coverage values for the groups compo
 > **Script:** All sequence coverage boxplots below were generated using [`../scripts/matrisome_coverage_boxplots.R`](../scripts/matrisome_coverage_boxplots.R)
 
 <p align="center">
-  <img src="../figures/sequence_coverage_core_matrisome.png" width="700"/>
+  <img src="../figures/filtered_onlyGallus_ecm_coverage_boxplots-2.png" width="700"/>
 </p>
 
 <p align="center">
-  <img src="../figures/sequence_coverage_matrisome_associated.png" width="700"/>
+  <img src="../figures/filtered_onlyGallus_ecm_coverage_boxplots-3.png" width="700"/>
 </p>
 
 **Figure 4.** Sequence coverage of (a) core and (b) non-core Matrisome proteins across different conditions.
 
 <p align="center">
-  <img src="../figures/sequence_coverage_collagens.png" width="700"/>
+  <img src="../figures/filtered_onlyGallus_ecm_coverage_boxplots-5.png" width="700"/>
 </p>
 
 <p align="center">
-  <img src="../figures/sequence_coverage_proteoglycans.png" width="700"/>
+  <img src="../figures/filtered_onlyGallus_ecm_coverage_boxplots-7.png" width="700"/>
 </p>
 
 <p align="center">
-  <img src="../figures/sequence_coverage_ecm_glycoproteins.png" width="700"/>
+  <img src="../figures/filtered_onlyGallus_ecm_coverage_boxplots-6.png" width="700"/>
 </p>
 
 **Figure 4 (continued).** Sequence coverage for (c) collagens, (d) proteoglycans, and (e) glycoproteins.
@@ -192,11 +192,11 @@ Across all conditions, the majority of Matrisome proteins are shared, with only 
 > **Script:** The UpSet plots were generated using [`../scripts/UpSetPlots.R`](../scripts/UpSetPlots.R)
 
 <p align="center">
-  <img src="../figures/upset_plot_matrisome.png" width="600"/>
+  <img src="../figures/upset_All_Matrisome.png" width="600"/>
 </p>
 
 <p align="center">
-  <img src="../figures/upset_plot_matrsiome_associated.png" width="600"/>
+  <img src="../figures/upset_Matrisome_Associated.png" width="600"/>
 </p>
 
 **Figure 6.** UpSet plots with unique and shared (A) core Matrisome and (B) Matrisome-associated proteins across conditions. Most Matrisome proteins are shared across conditions, with the most unique proteins being identified by the benchmark.
