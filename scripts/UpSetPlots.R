@@ -1,6 +1,6 @@
 # ══════════════════════════════════════════════════════════════════════════════
 #  Matrisome UpSet Plots  —  per-category PNG output
-#  Conditions: S, L, C, N, SF, LF, CF, RT, RTF (triplicates except RT/RTF)
+#  Conditions: S, L, C, N, SF, LF, CF 
 # ══════════════════════════════════════════════════════════════════════════════
 
 # ── 0.  Install / load packages ───────────────────────────────────────────────
@@ -165,7 +165,7 @@ for (nm in names(gmt_sets)) cat(sprintf("  %-25s  %d genes\n", nm, length(gmt_se
 all_matrisome_genes <- gmt_sets[["All Matrisome"]]
 
 # ── 6.  Desired condition display order  ──────────────────────────────────────
-COND_ORDER <- c("S", "L", "C", "N", "SF", "LF", "CF", "RT", "RTF")
+COND_ORDER <- c("S", "L", "C", "N", "SF", "LF", "CF")
 
 COND_LABELS <- c(
   "S"   = "Short heat",
@@ -175,8 +175,7 @@ COND_LABELS <- c(
   "SF"  = "High heat/ Short heat",
   "LF"  = "High heat/ Long heat",
   "CF"  = "High heat/ Collagenase",
-  "RT"  = "Cold water",
-  "RTF" = "High heat/ Cold water"
+
 )
 
 reorder_conditions <- function(cg) {
@@ -185,7 +184,8 @@ reorder_conditions <- function(cg) {
   cg[c(present, extra)]
 }
 condition_genes <- reorder_conditions(condition_genes)
-
+# Remove cold-water controls from analysis
+condition_genes <- condition_genes[!names(condition_genes) %in% c("RT", "RTF")]
 # Drop HEK condition if present
 condition_genes <- condition_genes[!grepl("^HEK", names(condition_genes), ignore.case = TRUE)]
 
