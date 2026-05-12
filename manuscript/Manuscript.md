@@ -149,21 +149,6 @@ Taking a closer look at the median sequence coverage values for the groups compo
 
 Looking at the sequence coverage with cold-water controls in addition to the benchmark, the presence of heat appears to prevent identification of more soluble proteins (e.g. glycoproteins) but excels in identifying more insoluble proteins such as collagens.
 
-<p align="center">
-  <img src="../figures/sequence_coverage_matrisome.png" width="700"/>
-</p>
-
-<p align="center">
-  <img src="../figures/sequence_coverage_basement_membranes.png" width="700"/>
-</p>
-
-<p align="center">
-  <img src="../figures/sequence_coverage_ecm_affiliated.png" width="700"/>
-</p>
-
-<p align="center">
-  <img src="../figures/sequence_coverage_naba_ecm_regulators.png" width="700"/>
-</p>
 
 **Figure 5.** Sequence coverage plots including the cold water controls for additional Matrisome subsets: (a) full Matrisome, (b) basement membranes, (c) ECM affiliated, and (d) ECM regulators.
 
