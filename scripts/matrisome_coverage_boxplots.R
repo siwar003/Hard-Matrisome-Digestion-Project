@@ -32,11 +32,8 @@ condition_levels <- c(
   "High heat / Long heat",
   "Collagenase",
   "High heat / Collagenase",
-  "Benchmark",
-  "Cold water",
-  "High heat / Cold water"
+  "Benchmark"
 )
-
 colour_map <- c(
   "Short heat" = "#90CAF9",
   "High heat / Short heat" = "#B71C1C",
@@ -44,9 +41,8 @@ colour_map <- c(
   "High heat / Long heat" = "#B71C1C",
   "Collagenase" = "#90CAF9",
   "High heat / Collagenase" = "#B71C1C",
-  "Benchmark" = "#A5D6A7",
-  "Cold water" = "#90CAF9",
-  "High heat / Cold water" = "#B71C1C"
+  "Benchmark" = "#A5D6A7"
+
 )
 
 subset_label_map <- c(
@@ -76,12 +72,7 @@ subset_order <- c(
 parse_condition <- function(sample_name) {
   sample_name <- toupper(sample_name)
 
-  if (grepl("^RTF$", sample_name)) {
-    return(c(condition_code = "RTF", condition_label = "High heat / Cold water"))
-  }
-  if (grepl("^RT$", sample_name)) {
-    return(c(condition_code = "RT", condition_label = "Cold water"))
-  }
+  
   if (grepl("^S[1-3]F$", sample_name)) {
     return(c(condition_code = "SF", condition_label = "High heat / Short heat"))
   }
@@ -127,9 +118,8 @@ safe_bool <- function(x) {
   vals %in% c("TRUE", "T", "1", "+", "YES")
 }
 
-sample_files <- list.files(input_dir, pattern = "\\.tsv$", full.names = TRUE, ignore.case = TRUE)
 sample_files <- sample_files[grepl(
-  "^(S[1-3]F?|L[1-3]F?|C[1-3]F?|N[4-6]|RTF?)\\.tsv$",
+  "^(S[1-3]F?|L[1-3]F?|C[1-3]F?|N[4-6])\\.tsv$",
   basename(sample_files),
   ignore.case = TRUE
 )]
@@ -272,13 +262,13 @@ write_csv(matched_gene_summary, file.path(output_dir, "subset_gene_match_summary
 
 base_theme <- theme_bw(base_size = 14, base_family = "sans") +
   theme(
-    plot.title = element_text(size = 18, face = "bold"),
+    plot.title = element_text(size = 20, face = "bold"),
     plot.subtitle = element_text(size = 11, margin = margin(b = 10)),
     plot.caption = element_text(size = 9, colour = "grey30"),
     axis.title.x = element_blank(),
-    axis.title.y = element_text(size = 14, face = "bold"),
-    axis.text.x = element_text(size = 11, angle = 35, hjust = 1, colour = "black"),
-    axis.text.y = element_text(size = 11, colour = "black"),
+    axis.title.y = element_text(size = 18, face = "bold"),
+    axis.text.x = element_text(size = 16, angle = 35, hjust = 1, colour = "black"),
+    axis.text.y = element_text(size = 16, colour = "black"),
     panel.grid.major.x = element_blank(),
     legend.position = "none",
     plot.margin = margin(12, 18, 12, 12)
@@ -325,7 +315,7 @@ make_plot <- function(subset_id_value) {
       data = annotation_df,
       aes(x = condition_label, y = y, label = label),
       vjust = 0,
-      size = 4.0,
+      size = 6.0,
       fontface = "bold",
       colour = "grey15",
       inherit.aes = FALSE
@@ -361,3 +351,4 @@ invisible(dev.off())
 
 message("Wrote PDF: ", normalizePath(pdf_path, winslash = "/", mustWork = TRUE))
 message("Wrote CSV summaries to: ", normalizePath(output_dir, winslash = "/", mustWork = TRUE))
+
