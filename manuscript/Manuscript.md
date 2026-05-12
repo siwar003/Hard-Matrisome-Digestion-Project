@@ -147,11 +147,6 @@ Taking a closer look at the median sequence coverage values for the groups compo
 
 **Figure 4 (continued).** Sequence coverage for (c) collagens, (d) proteoglycans, and (e) glycoproteins.
 
-Looking at the sequence coverage with cold-water controls in addition to the benchmark, the presence of heat appears to prevent identification of more soluble proteins (e.g. glycoproteins) but excels in identifying more insoluble proteins such as collagens.
-
-
-**Figure 5.** Sequence coverage plots including the cold water controls for additional Matrisome subsets: (a) full Matrisome, (b) basement membranes, (c) ECM affiliated, and (d) ECM regulators.
-
 ### NABA Reference subset gene matching summary
 
 #### Table 4. Genes matched per NABA Reference Matrisome subset (across all conditions)
