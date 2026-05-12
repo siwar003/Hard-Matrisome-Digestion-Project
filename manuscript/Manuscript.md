@@ -104,16 +104,16 @@ Sequence coverage, which is the percentage of a protein's amino acid sequence id
 
 #### Table 3. Median sequence coverage (%) by Matrisome subset and condition
 
-| Subset | Short heat | HH / Short heat | Long heat | HH / Long heat | Collagenase | HH / Collagenase | Benchmark | Cold water | HH / Cold water |
-|:-------|:----------:|:----------------:|:---------:|:---------------:|:-----------:|:-----------------:|:---------:|:----------:|:---------------:|
-| **Core Matrisome** | 17.5 | 17.4 | 11.3 | 7.1 | 7.2 | 10.9 | 16.7 | 8.2 | 10.9 |
-| **Matrisome Associated** | 7.8 | 10.4 | 9.1 | 8.1 | 6.2 | 4.1 | 16.3 | 17.2 | -- |
-| **Collagens** | 29.1 | 26.5 | 21.7 | 24.9 | 16.1 | 13.6 | 30.9 | 7.7 | 10.9 |
-| **Proteoglycans** | 8.8 | 9.2 | 7.1 | 8.4 | 4.2 | 10.3 | 19.8 | 24.5 | -- |
-| **ECM Glycoproteins** | 6.2 | 1.4 | 5.9 | 2.8 | 5.5 | 6.7 | 9.0 | 12.2 | -- |
-| **Basement Membranes** | 0.7 | 1.4 | 2.9 | 3.8 | 3.5 | 4.1 | 4.7 | 5.6 | -- |
-| **ECM Affiliated** | 3.7 | 9.0 | 7.4 | 9.0 | 4.3 | 3.4 | 23.4 | 30.1 | -- |
-| **ECM Regulators** | 5.7 | 5.8 | 9.1 | 5.8 | 3.1 | 3.1 | 12.4 | 9.9 | -- |
+| Subset | Short heat | HH / Short heat | Long heat | HH / Long heat | Collagenase | HH / Collagenase | Benchmark |
+|:-------|:----------:|:----------------:|:---------:|:---------------:|:-----------:|:-----------------:|:---------:|
+| **Core Matrisome** | 17.5 | 17.4 | 11.3 | 7.1 | 7.2 | 10.9 | 16.7 |
+| **Matrisome Associated** | 7.8 | 10.4 | 9.1 | 8.1 | 6.2 | 4.1 | 16.3 |
+| **Collagens** | 29.1 | 26.5 | 21.7 | 24.9 | 16.1 | 13.6 | 30.9 |
+| **Proteoglycans** | 8.8 | 9.2 | 7.1 | 8.4 | 4.2 | 10.3 | 19.8 |
+| **ECM Glycoproteins** | 6.2 | 1.4 | 5.9 | 2.8 | 5.5 | 6.7 | 9.0 |
+| **Basement Membranes** | 0.7 | 1.4 | 2.9 | 3.8 | 3.5 | 4.1 | 4.7 |
+| **ECM Affiliated** | 3.7 | 9.0 | 7.4 | 9.0 | 4.3 | 3.4 | 23.4 |
+| **ECM Regulators** | 5.7 | 5.8 | 9.1 | 5.8 | 3.1 | 3.1 | 12.4 |
 
 *HH = High heat (pre-heating at 180 °C). "--" indicates no proteins detected in that subset for that condition.*
 
