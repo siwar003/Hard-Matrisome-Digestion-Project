@@ -19,4 +19,4 @@ Contains word document of manuscript and .md form of manuscript in addition to R
 - psm.tsv files for all replicates from all conditions
 - Reference files used for Matrisome gene mapping
 - figures directory contains all images used in manuscript
-# Most recent draft of paper is the word document in /manuscript
+# Most recent draft of paper is the word document in /manuscript and remaining tasks are also listed as a separate file
