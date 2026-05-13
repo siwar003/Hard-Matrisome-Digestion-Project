@@ -1,4 +1,6 @@
-- add statistical analysis
-- keep trying to optimize search parameters for collagenase samples to accommodate for collagenase-induced cuts prior to trypsin digestion
-- maybe redo the fried cold water control (digestion done on it was too short ~3-4 hours)
-- fill in remaining section (LC-MS/MS instrumentation and settings section) + FragPipe configuration details
+- Integrate statistical analysis better into the draft and the figures 
+- Keep trying to optimize search parameters for collagenase samples to accommodate for collagenase-induced cuts prior to trypsin digestion
+- If necessary, do n=3 for the cold water controls (even though the main controls are the matched controls for frying vs non frying)
+- FIll in remaining section (LC-MS/MS instrumentation and settings section) + FragPipe configuration details
+- Keep modifying figures to make neater
+- If necessary, perform extra validation experiments (such as on mouse-derived tissue using the best performing condition, etc.)
