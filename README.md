@@ -1,5 +1,5 @@
 # Hard-Matrisome-Digestion-Project
-Contains word document of manuscript and .md form of manuscript in addition to R scripts used to generate data, protein.tsv files, and psm.tsv files (in /data).
+Contains word document of manuscript (V5 most recent) and R scripts used to generate data, protein.tsv files, and psm.tsv files (in /data).
 # Condition and Sample Labels (n=3, except for cold water controls)
 - L: Long heat
 - LF: High heat / Long heat
